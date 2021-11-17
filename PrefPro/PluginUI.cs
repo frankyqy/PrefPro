@@ -34,7 +34,7 @@ namespace PrefPro
                 {
                     var split = _configuration.Name.Split(' ');
                     _tmpFirstName = split[0];
-                    _tmpLastName = split[1];
+                    _tmpLastName = (split.Length > 1) ? split[1] : "";
                 }
                 _settingsVisible = value;
             }
@@ -99,7 +99,7 @@ namespace PrefPro
                     _configuration.Name = setName;
                     var split = setName.Split(' ');
                     _tmpFirstName = split[0];
-                    _tmpLastName = split[1];
+                    _tmpLastName = (split.Length > 1) ? split[1] : "";
                     _configuration.Save();
                 }
                 ImGui.SameLine();
@@ -109,7 +109,7 @@ namespace PrefPro
                     _configuration.Name = resetName;
                     var split = resetName.Split(' ');
                     _tmpFirstName = split[0];
-                    _tmpLastName = split[1];
+                    _tmpLastName = (split.Length > 1) ? split[1] : "";
                     _configuration.Save();
                 }
                 ImGui.PopItemWidth();
@@ -206,8 +206,8 @@ namespace PrefPro
             if (combined.Length > 20)
                 return lastValid;
 
-            newFirst = Regex.Replace(newFirst, "[^A-Za-z'\\-\\s{1}]", "");
-            newLast = Regex.Replace(newLast, "[^A-Za-z'\\-\\s{1}]", "");
+            newFirst = Regex.Replace(newFirst, "[^A-Za-z\u4e00-\u9fa5'\\-\\s{1}]", "");
+            newLast = Regex.Replace(newLast, "[^A-Za-z\u4e00-\u9fa5'\\-\\s{1}]", "");
 
             return $"{newFirst} {newLast}";
         }
