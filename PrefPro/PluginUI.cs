@@ -218,7 +218,7 @@ namespace PrefPro
             newFirst = Regex.Replace(newFirst, "[^A-Za-z\u4e00-\u9fa5'\\-\\s{1}]", "");
             newLast = Regex.Replace(newLast, "[^A-Za-z\u4e00-\u9fa5'\\-\\s{1}]", "");
 
-            return $"{newFirst} {newLast}";
+            return (newFirst.Length == 0 || newLast.Length == 0) ? $"{newFirst}{newLast}" : $"{newFirst} {newLast}";
         }
 
         private string GetNameOptionDescriptor(PrefPro.NameSetting setting)
