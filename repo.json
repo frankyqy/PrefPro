@@ -1,18 +1,24 @@
-{
-  "Author": "perchbird",
-  "Name": "PrefPro",
-  "InternalName": "PrefPro",
-  "AssemblyVersion": "1.2.0.6",
-  "Description": "Your character is personal, so you should be able to have NPCs refer to them\nthe way that you want. With PrefPro, you can control which text option\nwill appear when an NPC uses dialogue meant for a specific in-game gender.\nThis allows you to use a female player model and be referred to as male, and\nvice versa. In addition, there are a few name customization options - if you\nwant to only be referred to by your last name, so be it.\nNote: This plugin currently will not swap voiced cutscene dialogue.",
-  "ApplicableVersion": "any",
-  "RepoUrl": "https://github.com/lmcintyre/PrefPro",
-  "DalamudApiLevel": 8,
-  "LoadRequiredState": 0,
-  "LoadSync": false,
-  "LoadPriority": 0,
-  "Punchline": "Changes in-game dialogue to reference your desired gender and name.",
-  "AcceptsFeedback": true,
-  "DownloadLinkInstall": "https://github.com/frankyqy/PrefPro/releases/download/1.2.0.6/PrefPro.zip",
-  "DownloadLinkTesting": "https://github.com/frankyqy/PrefPro/releases/download/1.2.0.6/PrefPro.zip",
-  "DownloadLinkUpdate": "https://github.com/frankyqy/PrefPro/releases/download/1.2.0.6/PrefPro.zip"
-}
+[
+  {
+    "Author": "perchbird",
+    "Name": "PrefPro",
+    "InternalName": "PrefPro",
+    "Description": "你的角色是个人的，所以你应该能够让NPC以你想要的方式称呼他们。使用 PrefPro，您可以控制当 NPC 使用针对特定游戏性别的对话时将显示哪个文本选项。这允许您使用女性玩家模型并被称为男性，反之亦然。此外，还有一些名称自定义选项 - 如果您希望仅用您的姓氏来称呼，那就这样吧。注意：此插件目前不会交换有声过场动画对话。",
+    "ApplicableVersion": "any",
+    "Tags": [],
+    "CategoryTags": [],
+    "DalamudApiLevel": 8,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "TestingAssemblyVersion": "1.2.0.6",
+    "IsTestingExclusive": false,
+    "AcceptsFeedback": true,
+    "AssemblyVersion": "1.2.0.6",
+    "RepoUrl": "https://github.com/lmcintyre/PrefPro",
+    "DownloadLinkInstall": "https://github.com/frankyqy/PrefPro/releases/download/1.2.0.6/PrefPro.zip",
+    "DownloadLinkTesting": "https://github.com/frankyqy/PrefPro/releases/download/1.2.0.6/PrefPro.zip",
+    "DownloadLinkUpdate": "https://github.com/frankyqy/PrefPro/releases/download/1.2.0.6/PrefPro.zip"
+  }
+]
